@@ -1,0 +1,14 @@
+
+java 17 
+db setting :
+
+create database malldb;
+
+create 'malldbuser'@'localhost' identified by 'malluser';
+create 'malldbuser'@'%' identified by 'malluser';
+
+select * from mysql.user
+
+grant all privileges on malldb.* to 'malldbuser'@'localhost';
+grant all privileges on malldb.* to 'malldbuser'@'%';
+commit;

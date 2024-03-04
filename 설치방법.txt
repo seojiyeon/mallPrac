@@ -1,0 +1,32 @@
+react.js
+node.js
+DB : https://mariadb.org/kb/ko/mariadb-korean/
+pw : 1234
+port : 3307
+
+vscode 스프링 추가 : https://spring.io/tools
+aws 17 : https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html
+
+npx create-react-app mall
+cd mall
+code .
+npx tailwindcss init
+npm install tailwindcss
+tailwind.config.js 파일 수정
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js}"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+index.css 에서 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+수정
+
